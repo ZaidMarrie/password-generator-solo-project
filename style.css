@@ -1,0 +1,101 @@
+:root {
+	--clr-accent: hsl(160 84% 39%);
+	--clr-accent-heading: hsl(144 70% 58%);
+	--clr-neutral-100: hsl(0 50% 100%);
+	--clr-neutral-400: hsl(255 5% 84%);
+	--clr-neutral-700: hsl(215 28% 25%);
+	--clr-neutral-800: hsl(215 30% 22%);
+	--clr-neutral-900: hsl(215 28% 17%);
+
+	--ff-primary: "Inter", sans-serif;
+	--ff-secondary: "Karla", sans-serif;
+
+	--duration: 180ms;
+	--easing: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/* Resets */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-size: 1.25rem;
+	color: var(--clr-neutral-400);
+	line-height: 1;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: var(--clr-neutral-900);
+}
+
+hr {
+	margin: 2.2rem 0;
+	border: 1px solid var(--clr-neutral-700);
+}
+
+.container {
+	width: min(100% - 3.25rem, 28rem);
+	margin-inline: auto;
+	margin-top: 7.2rem;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	font-family: var(--ff-secondary);
+	color: var(--clr-neutral-100);
+}
+
+.title span {
+	color: var(--clr-accent-heading);
+	display: block;
+}
+
+.sub-title {
+	line-height: 1.4;
+	margin: 0.625rem 0rem 3.125rem;
+}
+
+.btn,
+.password {
+	border-radius: 5px;
+}
+
+.btn {
+	font: inherit;
+	font-weight: 500;
+	color: var(--clr-neutral-100);
+	border: none;
+	padding: 0.625rem 1rem;
+	background-color: var(--clr-accent);
+	transition: transform var(--duration) var(--easing);
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--clr-accent-heading);
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.passwords-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.password {
+	line-height: 1.6;
+	color: var(--clr-accent);
+	padding: 0.5rem 1rem;
+	background-color: var(--clr-neutral-800);
+}
