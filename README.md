@@ -28,7 +28,7 @@ The following is not required, but they are some stretch goals to take this proj
 ### Links
 
 - [Project Design](<https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)?node-id=0%3A1>)
-- [Project Live Demo](https://scrimba.com/scrim/cwGyNMfd)
+- [Project Live Demo](https://zaidmarrie.github.io/password-generator-solo-project/)
 
 ## My process
 
