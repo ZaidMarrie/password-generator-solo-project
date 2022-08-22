@@ -97,6 +97,8 @@ hr {
 .password {
 	line-height: 1.6;
 	color: var(--clr-accent);
+	min-height: 3rem;
+	min-width: 12rem;
 	padding: 0.5rem 1rem;
 	background-color: var(--clr-neutral-800);
 }
